@@ -1,8 +1,14 @@
-Realizei a criaÁ„o de uma API Rest, com a realizaÁ„o de test utilizando swagger.
+Realizei a cria√ß√£o de uma API Rest, com a realiza√ß√£o de test utilizando swagger.
 
 Utilizei o ASP.NET Core, Swagger.
 
-Essa API tem uma classe Controller, onde essa classe encapsula a lÛgica para lidar com solicitaÁıes HTTP relacionadas a eventos de desenvolvedores em uma API RESTful.
+Essa API tem uma classe Controller, onde essa classe encapsula a l√≥gica para lidar com solicita√ß√µes HTTP relacionadas a eventos de desenvolvedores em uma API RESTful.
+
+
+Ap√≥s Realiza√ß√£o da API Rest, realizei a conex√£o com o banco de dados MySQL, gerando a tabela direto do Visual Studio. 
+
+Primeiro gerei a migra√ß√£o, depois gerei o update de todas as tabelas criadas. 
+Todo via linha de comando dotnet. 
 
 
 
