@@ -1,5 +1,6 @@
 
 using Api_Rest_1.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace Api_Rest_1
 {
@@ -10,7 +11,13 @@ namespace Api_Rest_1
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddSingleton<DevEventsDbContext>();
+            var connectionString = builder.Configuration.GetConnectionString("DevEventsCs");
+
+
+
+            //builder.Services.AddDbContext<DevEventsDbContext>(o => o.UseInMemoryDatabase("DevEventsDbContext"));
+            builder.Services.AddDbContext<DevEventsDbContext>(o => o.UseMySQL(connectionString));   
+            
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
